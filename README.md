@@ -1,32 +1,33 @@
 # Spotify-UI-Manual-Testing
-This simulation project involves comprehensive testing of the [Spotify](https://open.spotify.com/) Web and Mobile applications, focusing on both UI web and mobile platform test coverage for the Spotify user registration, login, and search features.
+This manual QA project focuses on testing **user authentication** features (Registration & Login) of [Spotify](https://open.spotify.com/) on both **Web** and **Mobile** (Android) platforms. The goal is to ensure the sign-up and sign-in flows behave correctly under valid and invalid conditions, with consistent UI behavior across devices.
+
 🚧 This project is under devlopment
 
 ## 📚 Documentation (Google Docs & Sheets)
-- 📄 [Test Plan (Google Docs)](#)
-- 🧪 [Test Cases (Google Sheets)](#)
-- 🐞 [Bug Report (PDF - Jira Export)](#)
-- ✅ [Test Summary Report (Google Docs)](#)
+- 📄 [Test Plan (Google Docs)](https://docs.google.com/document/d/1IsaWanqsslgIy9YzZMLgGwmQrDeykgN3SsiBo9M55Ig/edit?usp=sharing)
+- 🧪 [Test Cases (Google Sheets)](https://docs.google.com/spreadsheets/d/1tklcKJP2mhorhKTgzxXQ96YuxvxLRdx13fN6Dq4aze0/edit?usp=sharing)
+- 🐞 [Bug Report (PDF - Jira Export)](https://drive.google.com/file/d/1Zr-k2PuodTHxoE9pCs1G9gHjdjZ4_d2Z/view?usp=sharing)
+- ✅ [Test Summary Report (Google Docs)](https://docs.google.com/document/d/1VgYIU6C5tRS8IbUe3xjr2taTc-icdV8dLNG2h-PL0RU/edit?usp=sharing)
 
 📁 View all documentation in this shared folder: [Google Drive Folder](https://drive.google.com/drive/folders/1UzFf2ct0mGIlHRyV_Wyrb2mfOl0DAlOd?usp=sharing)
 
 ## 🧪 Test Scope
 ### ✅ In Scope
-- Functional UI testing of standard user workflows on https://open.spotify.com/
-    - Sign Up: Email/password registration, form validation, and social account signups
-    - Log In: Email/password and social login validations
-    - Music Search: Song, artist, and album queries with both valid and edge case inputs
-- Cross-platform testing: 
-    - Platforms: Spotify Web Player and Mobile App (Android & iOS)
-    - Browsers: Chrome, Firefox, Edge
-    - Devices: Desktop, Mobile
--  Offline & Network Scenarios:
-    - Behavior when user attempts to sign up or log in without an internet connection
-    - Error message validation for network failure or timeout
-    - App/web resilience and retry mechanisms
+- User Registration
+  - Valid and invalid input handling
+  - Required field validation
+  - Email format and password strength
+  - Redirect after successful registration
+- User Login
+  - Valid login with correct credentials
+  - Invalid login (wrong email/password)
+  - Error message validation
+  - Logout functionality
+- Cross-Platform Validation
+  - Tested on both desktop browser and Android mobile app
 
 ### ❌ Out of Scope
-- Backend/API testing of Spotify services (e.g., account creation via API, search indexing)
+- Backend/API testing of Spotify services (e.g., account creation via API)
 - Audio streaming quality, buffering performance, or bitrate comparisons
 - Premium subscription flows (e.g., payment gateways, upgrade/downgrade flows)
 - Accessibility compliance testing (e.g., WCAG, screen reader support)
